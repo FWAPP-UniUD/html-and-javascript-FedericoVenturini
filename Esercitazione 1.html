@@ -1,0 +1,230 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title></title>
+    </head>
+    <body>
+        <p>Esercizio 1</p>
+        <p>Lista spesa:</p>
+        <ul>
+            <li>Pane</li>
+            <li>Prosciutto</li>
+                <ul>
+                  <li>Prosciutto Cotto</li>
+                  <li>Prosciutto Crudo</li>
+                </ul>
+            <li>Formaggio</li>
+        </ul>
+        <p>Esercizio 2</p>
+        <p>Goleador</p>
+        <ul>
+                <img src = "Immagine/Goleador.jpg" alt="Lionel Messi">
+        </ul>
+        
+        <p>Esercizio 3</p>
+        <ul>
+            <em>Questo è</em>
+            <strong>Bart Simpson</strong>
+            <a href=Immagine/Page_Bart.html>
+                <img src = "http://upload.wikimedia.org/wikipedia/it/6/65/Bart_Simpson.png">
+            </a>
+        </ul>
+
+        <p>Esercizio 4</p>
+        
+        <table>
+            <caption>
+                <p>I miei dati</p>
+            </caption>
+            <thead>
+                <tr>
+                    <th>Colonna 1</th>
+                    <th>Colonna 2</th>
+                    <th>Colonna 3</th>
+                    <th>Colonna 4</th>
+                </tr>
+            </thead>
+            <tfoot>
+                <tr>
+                    <td>23</td>
+                    <td>Totale 2</td>
+                    <td>Totale 3</td>
+                    <td>Totale 4</td>
+                </tr>
+            </tfoot>
+            <tbody>
+                <tr>
+                    <td>8</td>
+                    <td>Dato 1-2</td>
+                    <td>Dato 1-3</td>
+                    <td>Dato 1-4</td>
+                </tr>
+                <tr>
+                    <td>9</td>
+                    <td>Dato 2-2</td>
+                    <td>Dato 2-3</td>
+                    <td>Dato 2-4</td>
+                </tr>
+                <tr>
+                    <td>6</td>
+                    <td>Dato 3-2</td>
+                    <td>Dato 3-3</td>
+                    <td>Dato 3-4</td>
+                </tr>
+            </tbody>
+        </table>
+        <p>Esercizio 5</p>
+       
+        <form action="http://satt.diegm.uniud.it/wa/test_form.php" method="post">
+            Username:<br>
+            <input type="text" name="username"><br>
+            Password:<br>
+            <input type="password" name="password"><br>
+            <input type="submit" value="Invia">
+        </form>
+
+        <p>Esercizio 6</p>
+        <form action="http://satt.diegm.uniud.it/wa/test_form.php" method="post">
+            Username:<br>
+            <input type="text" name="username"><br>
+            Password:<br>
+            <input type="password" name="password"><br>
+            <input type="submit" value="Invia"><br>
+            <input type="radio" name="età" value = "young"><20<br>
+            <input type="radio" name="età" value = "middle">21-35<br>
+            <input type="radio" name="età" value = "old">>36<br>
+            <input type="checkbox" name="scelta" value = "1">Agonistico<br>
+            <input type="checkbox" name="scelta" value = "2">Amatoriale<br>
+            <select multiple>
+                <option value = "Nike">Nike</option>
+                <option value = "Adidas">Adidas</option>
+                <option value = "Umbro">Umbro</option>
+                <option value = "Mizuno">Mizuno</option>
+                <option value = "Puma">Puma</option>
+            </select>
+        </form>
+        <p>Esercizio 7</p>
+            <img src = "Immagine/Goleador.jpg" onmouseover="mouseover()"
+             onmouseout="mouseout()" onclick="mouseclick()" 
+             oncontextmenu="mouseclickdx()" >
+            <script>
+            function mouseover() {
+                alert("Mouse sull'immagine")
+            }    
+            </script> 
+            <script>  
+            function mouseout() {
+                alert ("Mouse fuori dall'immagine")
+            }   
+            </script>
+            <script>
+            function mouseclick() {
+                alert ("Click sull'immagine")
+            }   
+            </script>
+            <script>
+                function mouseclickdx() {
+                    alert ("Click tasto destro sull'immagine")
+                }   
+            </script>
+            
+        <p>Esercizio 8</p>
+        <img src = "Immagine/schiacciata.jpg" onmouseover="alert1(this)" onmouseout="alert2(this)" onclick="alert3(this)"  oncontextmenu="alert4(this)" >
+           
+           <script>
+                function alert1(x) {
+                x.src = "Immagine/smile1.png"
+                
+            }    
+            </script> 
+            
+            <script>
+                function alert2(x) {
+                x.src = "Immagine/smile2.png"
+                    
+            }    
+            </script> 
+
+            <script>
+                function alert3(x) {
+                x.src = "Immagine/smile3.png"
+            
+            }    
+            </script> 
+                
+            <script>
+                function alert4(x) {
+                x.src = "Immagine/smile4.png"
+                    
+            }    
+            </script> 
+        <p>Esercizio 9</p>
+
+        <button onclick="Mostra()"> Mostra </button>
+        <button onclick="Nascondi()"> Nascondi </button>
+
+        <div id="placeholder">
+                Lorem ipsum. . .
+        </div>
+
+        <script>
+        function Mostra() {
+            var x = document.getElementById("placeholder");
+            if (x.style.display === "none") {
+                x.style.display = "block";
+            } else {
+                x.style.display = "block";
+            }
+            
+            }
+        
+        function Nascondi() {
+            var x = document.getElementById("placeholder");
+            if (x.style.display === "none") {
+                x.style.display = "none";
+            } else {
+                x.style.display = "none";
+            }
+            
+            }
+        </script>
+
+
+        <p>Esercizio 10</p>
+
+        <form method="POST">
+ 
+            <input type="checkbox" name="checkbox" onclick="Attiva(this)" id="check" > Abilita <br>
+
+            <fieldset id="myfieldset" name= "myfieldset">
+                <legend>Dati Personali:</legend>
+                Nome:<br>
+                <input type="text" name="Nome"><br>
+                Cognome:<br>
+                <input type="text" name="Cognome"><br>
+                Email:<br>
+                <input type="text" name="Email" > 
+            </fieldset>
+                          
+          
+        </form> 
+           
+        <script>
+            function Attiva(checkbox) {
+            var toggle = document.getElementById("myfieldset");
+            checkbox.checked ? toggle.disabled = false : toggle.disabled = true;
+        }  
+            window.onload = function() {
+	        Attiva(document.getElementById('check'));
+        }
+        </script> 
+
+       
+        
+    </body>
+
+</html>
+
+
+
+
